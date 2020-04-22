@@ -32,6 +32,7 @@ class RandomBoxes extends Component {
             <Box 
             key={index}
             color={color}
+            num={index}
             />
         ));
         return (

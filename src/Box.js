@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 
 class Box extends Component {
     render () {
-        const {color} = this.props
+        const {color, num} = this.props
         return (
-        <div className="Box" style={{backgroundColor: `${color}` , height:"100px", width:"100px"}}>Ima box</div>
+        <div className="Box" style={{backgroundColor: `${color}` , height:"100px", width:"100px", margin: "1px"}}>Box #{num + 1}</div>
         )
     }
 }

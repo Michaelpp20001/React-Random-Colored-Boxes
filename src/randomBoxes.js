@@ -23,13 +23,20 @@ class RandomBoxes extends Component {
                     "Purple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen",
                     "SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen",
                     "SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke",
-                    "Yellow","YellowGreen"]
-      };
+                    "Yellow","YellowGreen"],
+        boxAmnt: 32,
+      }
+      ;
     render () {
+        const boxes = this.props.allColors.map((color, index) => (
+            <Box 
+            key={index}
+            color={color}
+            />
+        ));
         return (
-            <div className="App">
-                Hello boxes!
-                <Box />
+            <div className="randomBoxes">
+                {boxes}
             </div>
         );
     }

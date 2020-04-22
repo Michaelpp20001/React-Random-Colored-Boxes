@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-import './Box.css';
 
 class Box extends Component {
-
     render () {
+        const {color} = this.props
         return (
-            <div className="box" style={{backgroundColor: "blue"}}>I'm a box!</div>
-        );
+        <div className="Box" style={{backgroundColor: `${color}` , height:"100px", width:"100px"}}>Ima box</div>
+        )
     }
+}
 
-};
-
-export default Box
+export default Box;

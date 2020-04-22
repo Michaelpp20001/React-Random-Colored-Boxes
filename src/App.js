@@ -4,7 +4,9 @@ import RandomBoxes from './randomBoxes';
 
 function App() {
   return (
-    <RandomBoxes />
+    <div>
+      <RandomBoxes />
+      </div>
   );
 }
 
